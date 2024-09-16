@@ -3,7 +3,7 @@ from math import sqrt
 while True:
     try:
         L = int(input("Zadej indukcnost [H]:"))        
-        if L > L:
+        if L > 0:
             break  
     except ValueError:
         print("Zadej pozitivni cislo")
@@ -13,7 +13,7 @@ while True:
 while True:
     try:
         C = int(input("Zadej kapacitu [F]:"))
-        if C > C:
+        if C > 0:
             break
     except ValueError:
         print("Zadej pozitivni cislo")
